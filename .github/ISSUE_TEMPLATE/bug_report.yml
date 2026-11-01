@@ -1,0 +1,44 @@
+name: 🐞 Ошибка
+description: Бот или сайт работает не так, как должен
+title: "[Баг] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: product
+    attributes:
+      label: Где ошибка
+      options:
+        - WaveShape (бот)
+        - waveshape.ru (сайт)
+        - BlueBerry (бот)
+        - blueberry-bot.ru (сайт)
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: Что случилось
+      description: Что вы сделали, что ожидали и что получили вместо этого
+      placeholder: "Написал /play <ссылка>, бот ответил «Ничего не найдено», хотя трек есть"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как повторить
+      placeholder: |
+        1. ...
+        2. ...
+  - type: input
+    id: error_id
+    attributes:
+      label: Номер ошибки
+      description: Если бот показал «Код ошибки» или номер, вставьте его сюда
+  - type: textarea
+    id: screens
+    attributes:
+      label: Скриншоты
+      description: Перетащите картинки сюда. Закройте на них токены, e-mail и личные данные
+  - type: markdown
+    attributes:
+      value: "ID сервера и ник указывать не обязательно. Никогда не присылайте токены и пароли."
