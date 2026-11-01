@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Сервер поддержки в Discord
+    url: https://discord.gg/XtyfDvn6Xe
+    about: Вопросы, помощь с ботом, апелляции на блокировку
+  - name: Сообщить об уязвимости
+    url: https://github.com/SWAY-gg/.github/blob/main/SECURITY.md
+    about: Не публикуйте уязвимости в issue, напишите нам лично
